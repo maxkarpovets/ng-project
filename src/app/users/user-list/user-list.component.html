@@ -1,0 +1,13 @@
+<mat-card *ngFor="let user of users">
+  <img [src]="user.picture.large" >
+  
+  <span class="user-name">{{user.name.first}} {{user.name.last}}</span>
+  
+  <span class="user-like">Like</span>
+  <button mat-button (click)="openDialog(user)" class="user-details" mat-button>Details</button>
+ 
+</mat-card>
+
+<div *ngIf="selectedUser">
+  <selected [selectedUser]="selectedUser"></selected>
+<div>

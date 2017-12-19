@@ -1,0 +1,23 @@
+<header></header>
+ 
+<div class="row page">
+  <div class="column side-nav" >
+      <mat-list>
+        <div class="block-name">Routing items</div>
+        <mat-list-item> <a [routerLink]="['/']">Home</a></mat-list-item>
+        <mat-list-item> <a [routerLink]="['users']">Users</a></mat-list-item>
+        <mat-list-item> <a [routerLink]="['events']">Media module</a></mat-list-item>
+        <div class="block-name">Login user items</div>
+        <button class='menu-button' mat-button (click)="loginFirst()">Login First</button>
+        <button class='menu-button' mat-button (click)="loginSecond()">Login Second</button>
+        <button class='menu-button' mat-button (click)="logout()">Logout</button>
+        <div class="block-name">Greetings items</div>
+        <button class='menu-button' mat-button (click)="showGreetings()">Show greetings</button>
+        <button class='menu-button' mat-button (click)="hideGreetings()">Hide greetings</button>
+    </mat-list>
+  </div>
+  <div class="column main-area">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+ 

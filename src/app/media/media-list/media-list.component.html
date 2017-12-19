@@ -1,0 +1,5 @@
+<mat-card *ngFor="let media of medialist">
+  <span class="media-title">{{media.title}}</span>   
+  From source {{media.source}}
+  <a target="_blank" [attr.href]="media.link">Details</a>
+</mat-card>

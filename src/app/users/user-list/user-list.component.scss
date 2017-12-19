@@ -1,0 +1,36 @@
+mat-card {
+    width: 200px;
+    height: 320px;
+    display: inline-grid;
+    margin: 10px;
+    background-color: #fff;
+}
+
+img {
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.user-name {
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    font-size: 18px;
+    color: #242424;
+}
+
+.user-details {
+    position: absolute;
+    bottom: 1px;
+    left: 100px;
+    color: #242424;
+}
+
+.user-like {
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    color: #F08080;
+}
